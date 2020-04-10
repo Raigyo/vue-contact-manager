@@ -5,7 +5,7 @@
 > 🔨 Contact Manager. From Udemy '[Créer une Single Page Application avec Vue.js et Firestore](https://www.udemy.com/course/creer-une-single-page-application-avec-vuejs-et-firestore)'.
 
 
-![Vue+Firestore logos](./readme-img/reactfirebase.png)
+![Vue+Firestore logos](readme-img/reactfirebase.png)
 
 
 # contact-manager
