@@ -1,5 +1,5 @@
 // Database Access Layer (DAL)
-// Useful to make it separately for isntance if we change DB
+// Useful to make it separately for instance if we change DB
 
 import Firebase from 'firebase/app';
 import 'firebase/firestore';

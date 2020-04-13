@@ -1,7 +1,7 @@
 // Config to access Firestore
 
 // Yes the apiKey is here! ^^
-// Should not be online...
+// Should not be online / should be in .gitignore...
 
 const firestoreConfig = {
   apiKey: 'AIzaSyAIHqRTJf38krGQoGo3R3CEXnWSiJDYf0Q',
