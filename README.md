@@ -27,11 +27,21 @@ Problem with spaces using Eslint, use: `npm run lint -- --fix`
 
 **Compiles and minifies for production**
 
-`npm run lint`
+`npm run build`
+
+**Useful snipets**
+
+`vbase`
+
+`vimport`
+
+`vmethod`
+
+`vdata`
 
 ## Components
 
-[Firebase](https://www.npmjs.com/package/firebase)
+- [Firebase](https://www.npmjs.com/package/firebase)
 
 ## Usefull links
 

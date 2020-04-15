@@ -13,12 +13,16 @@ const Firestore = App.firestore();
 // (not used anymore)
 
 export default {
-  // promise: create: function (){},
+  // Return promise in createContact: create
   create(contact) {
     return Firestore.collection('contacts').add(contact);
   },
-  // promise: read: function (contact){},
+  // Return promise in getAllContacts: read
   read() {
     return Firestore.collection('contacts').get();
+  },
+  // Return promise in deleteContact: delete
+  delete(id) {
+    return Firestore.collection('contacts').doc(id).delete();
   },
 };// \default
