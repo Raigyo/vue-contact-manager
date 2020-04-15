@@ -9,7 +9,8 @@
                 <button @click="deleteContact(contact)">x</button>
             </li>
         </ul>
-    </div>
+    </div>git checkout section3
+		
 </template>
 
 <script>
