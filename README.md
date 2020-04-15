@@ -25,6 +25,8 @@ npm run serve
 
 Problem with spaces using Eslint, use: `npm run lint -- --fix`
 
+Also put your pages in *LF* (=Line Feed) instead of *CR+LF* (=Carriage Return + Line Feed)
+
 **Compiles and minifies for production**
 
 `npm run build`

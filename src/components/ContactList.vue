@@ -9,12 +9,10 @@
                 <button @click="deleteContact(contact)">x</button>
             </li>
         </ul>
-    </div>git checkout section3
-		
+    </div>
 </template>
 
 <script>
-
 export default {
   props: ['contacts', 'title'], // props from App component (parent to children)
   methods: {
@@ -23,15 +21,15 @@ export default {
       this.$emit('deleteContact', contact);
     }, // \deleteContact
   }, // \methods
-};// \export default
+}; // \export default
 </script>
 
 <style scoped>
-    li{
-        list-style: none;
-    }
-    ul {
-    padding: 0;
-    list-style-type: none;
-    }
+li {
+  list-style: none;
+}
+ul {
+  padding: 0;
+  list-style-type: none;
+}
 </style>
