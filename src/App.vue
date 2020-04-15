@@ -1,19 +1,18 @@
 <template>
-  <div id="app">
+  <div id='app'>
     <!-- custom events: v-on:<eventName>='<method>' or '@' listen to the event -->
     <!-- created in children and use the method in parent -->
     <!-- here it refreshes the contact list after a create -->
     <!-- / children to parent -->
-    <ContactForm @created="getAllContacts" title="Create contact"/>
+    <ContactForm @created='getAllContacts' title='Create contact' />
     <!-- binding: 'v-bind:' or ':', the property could be used in -->
     <!-- the target component using props -->
     <!-- / parent to children -->
-    <ContactList @deleteContact="deleteContact" :contacts="contacts" title="Contact list"/>
+    <ContactList @deleteContact='deleteContact' :contacts='contacts' title='Contact list' />
   </div>
 </template>
 
 <script>
-
 // Import components
 import ContactForm from './components/ContactForm.vue';
 import ContactList from './components/ContactList.vue';
