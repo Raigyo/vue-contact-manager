@@ -9,7 +9,7 @@
             <p><input type='text' placeholder='Name' v-model='contact.lastName'></p>
             <p><input type='text' placeholder='Email' v-model='contact.email'></p>
             <p><input type='text' placeholder='Phone' v-model='contact.phone'></p>
-        <button type='submit'>Create</button>
+        <button class="btn btn-success" type='submit'>Create</button>
         </form>
     </div>
 </template>

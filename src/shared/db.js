@@ -21,6 +21,11 @@ export default {
   read() {
     return Firestore.collection('contacts').get();
   },
+  // Return promise in editContact: update
+  // '...contact' spread all datas from contact
+  update(contact) {
+    return Firestore.collection('contacts').doc(contact.id).update({ ...contact });
+  },
   // Return promise in deleteContact: delete
   delete(id) {
     return Firestore.collection('contacts').doc(id).delete();

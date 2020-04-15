@@ -1,20 +1,20 @@
 <template>
-    <div>
+    <div class='card-block'>
         <h2>{{ title }}</h2>
-        <ul>
-            <!-- 'v-for' = 'for each' -->
-            <li v-for="contact in contacts" :key="contact.id">
-                <!-- interpretation using 'data' method-->
-                {{ contact.data().firstName }} {{ contact.data().lastName }}
-                <button @click="deleteContact(contact)">x</button>
-            </li>
-        </ul>
+      <!-- <ContactDetails> or <contact-details> (kebab-case)-->
+      <contact-details :contact='contact' v-for='contact in contacts' :key='contact.data().id'>
+      </contact-details>
     </div>
 </template>
 
 <script>
+import ContactDetails from './ContactDetails.vue';
+
 export default {
   props: ['contacts', 'title'], // props from App component (parent to children)
+  components: {
+    ContactDetails,
+  },
   methods: {
     deleteContact(contact) {
       // we are in a dumb component so we emit an event to the parent smart component
@@ -25,11 +25,7 @@ export default {
 </script>
 
 <style scoped>
-li {
-  list-style: none;
-}
-ul {
-  padding: 0;
-  list-style-type: none;
+.card-block {
+  padding-top: 1.5rem;
 }
 </style>
