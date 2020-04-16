@@ -30,7 +30,7 @@ Contact manager with CRUD to store contact data in Cloud Firestore.
 
 ### Localy
 
-Clone, the [local-version](#) branch.
+Clone, the [local-version](https://github.com/Raigyo/vue-contact-manager/tree/local-version) branch.
 
 Then:
 
