@@ -7,19 +7,41 @@
 
 ![Vue+Firestore logos](readme-img/logo-vue-firestore.png)
 
+![Capture](readme-img/capture01.png)![Capture](readme-img/capture02.png)![Capture](readme-img/capture03.png)
+
+
+![Capture DB](readme-img/capture-firestore.png)
+
 ## About
 
+Contact manager with CRUD to store contact data in Cloud Firestore.
+
+**Components:**
+- ContactForm: manage creation of contact
+- ContactList:  manage delete and edit contact
+- ContactDetails: manage displaying contact card (view mode and edit mode)
+
+**Views**
+
+- Home: manage the displaying of all the cards and the promises returned by db.js
+(that manages communication with Firestorm).
 
 ## How to use?
 
 ### Localy
 
-Clone, then:
+Clone, the [local-version](#) branch.
+
+Then:
 
 ```
 npm install
 npm run serve
 ```
+
+### Online
+
+See demo on [Heroku](#).
 
 **During development**
 
