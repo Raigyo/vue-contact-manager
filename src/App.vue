@@ -14,6 +14,8 @@
       title='Contact list'
       @saveEdit='saveEdit'
     />
+    <!-- Display the selected route -->
+    <router-view />
   </div>
 </template>
 
