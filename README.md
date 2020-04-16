@@ -44,6 +44,7 @@ Also put your pages in *LF* (=Line Feed) instead of *CR+LF* (=Carriage Return + 
 ## Components
 
 - [Firebase](https://www.npmjs.com/package/firebase)
+- [vue-router](https://www.npmjs.com/package/vue-router)
 
 ## Usefull links
 

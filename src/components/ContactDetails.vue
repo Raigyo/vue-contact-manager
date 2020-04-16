@@ -10,7 +10,7 @@
       <h6 class='card-subtitle mb-2 text-muted'>{{ contact.data().email }}</h6>
       <p class='card-text'>Phone number: {{ contact.data().phone }}</p>
       <button class="btn btn-sm btn-warning" @click="editContact">Edit</button>
-      <button class="btn btn-sm btn-danger" @click="deleteContact">Delete</button>
+      <button class="btn btn-sm btn-danger" @click="$emit('deleteContact', contact)">Delete</button>
     </div>
   </div>
   <!-- Edit we use props from contact object-->
@@ -28,12 +28,12 @@
       <button
         class="btn btn-sm btn-success"
         @click="saveEdit">
-        modifier
+        Save
       </button>
       <button
         class="btn btn-sm btn-warning"
         @click="cancelEdit">
-        annuler
+        Cancel
       </button>
     </div>
   </div>
@@ -65,11 +65,12 @@ export default {
       };
       this.isInEditMode = true;
     }, // \editContact
-    deleteContact() {
-    }, // \deleteContact
     saveEdit() {
+      this.$emit('saveEdit', this.contactCopy);
+      this.isInEditMode = false;
     }, // \saveEdit
     cancelEdit() {
+      this.isInEditMode = false;
     }, // \cancelEdit
   }, // \methods
 };

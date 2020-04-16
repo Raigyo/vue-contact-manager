@@ -8,7 +8,12 @@
     <!-- binding: 'v-bind:' or ':', the property could be used in -->
     <!-- the target component using props -->
     <!-- / parent to children -->
-    <ContactList @deleteContact='deleteContact' :contacts='contacts' title='Contact list' />
+    <ContactList
+      @deleteContact='deleteContact'
+      :contacts='contacts'
+      title='Contact list'
+      @saveEdit='saveEdit'
+    />
   </div>
 </template>
 
@@ -52,6 +57,15 @@ export default {
           console.error(error);
         });
     }, // \deleteContact
+    saveEdit(editedContact) {
+      db.update(editedContact)
+        .then(() => {
+          this.getAllContacts();
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+    }, // \saveEdit
   }, // \methods
   name: 'App',
   components: {
