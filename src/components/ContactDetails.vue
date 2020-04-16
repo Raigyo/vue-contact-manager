@@ -4,9 +4,11 @@
   <!-- Display we use props from contact object-->
   <div v-if="!isInEditMode" class='card' style='width: 18rem;'>
     <div class='card-body'>
-      <h5 class='card-title'>
-        {{ contact.data().firstName }} {{ contact.data().lastName.toUpperCase() }}
-      </h5>
+      <!-- router-link :to="{ name: 'contact', params: { id: contact.id } }" -->
+        <h5 class='card-title'>
+          {{ contact.data().firstName }} {{ contact.data().lastName.toUpperCase() }}
+        </h5>
+      <!-- /router-link -->
       <h6 class='card-subtitle mb-2 text-muted'>{{ contact.data().email }}</h6>
       <p class='card-text'>Phone number: {{ contact.data().phone }}</p>
       <button class="btn btn-sm btn-warning" @click="editContact">Edit</button>

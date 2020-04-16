@@ -17,7 +17,7 @@
 import ContactDetails from './ContactDetails.vue';
 
 export default {
-  props: ['contacts', 'title'], // props from App component (parent to children)
+  props: ['contacts', 'title'], // props from Home component (parent to children)
   components: {
     ContactDetails,
   },
