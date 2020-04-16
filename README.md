@@ -4,13 +4,15 @@
 
 > 🔨 Contact Manager (CRUD) using Google Cloud Firestore to store datas. From Udemy '[Créer une Single Page Application avec Vue.js et Firestore](https://www.udemy.com/course/creer-une-single-page-application-avec-vuejs-et-firestore)'.
 
+See demo on [Github page](https://raigyo.github.io/vue-contact-manager/#/).
+
 
 ![Vue+Firestore logos](readme-img/logo-vue-firestore.png)
 
 ![Capture](readme-img/capture01.png)![Capture](readme-img/capture02.png)![Capture](readme-img/capture03.png)
 
 
-![Capture DB](readme-img/capture-firestore.png)
+![Capture DB](readme-img/capture-firestore.png)git add .
 
 ## About
 
@@ -41,7 +43,7 @@ npm run serve
 
 ### Online
 
-See demo on [Heroku](#).
+See demo on [Github page](https://raigyo.github.io/vue-contact-manager/#/).
 
 **During development**
 
@@ -74,3 +76,4 @@ Also put your pages in *LF* (=Line Feed) instead of *CR+LF* (=Carriage Return + 
 - [Udemy: repo Github codeconcept/contact-manager](https://github.com/codeconcept/contact-manager)
 - [VSCode: Vue VSCode Snippets](https://marketplace.visualstudio.com/items?itemName=sdras.vue-vscode-snippets)
 - [VSCode: Trailing Spaces](https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces)
+- [Deploy Vue.js Application to GitHub Pages](https://www.mynotepaper.com/deploy-vue-app-to-github-pages)
