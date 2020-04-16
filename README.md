@@ -17,13 +17,13 @@
 Contact manager with CRUD to store contact data in Cloud Firestore.
 
 **Components:**
-- ContactForm: manage creation of contact
-- ContactList:  manage delete and edit contact
-- ContactDetails: manage displaying contact card (view mode and edit mode)
+- ContactForm: manages creation of contact
+- ContactList:  manages delete and edit contact
+- ContactDetails: manages displaying contact card (view mode and edit mode)
 
 **Views**
 
-- Home: manage the displaying of all the cards and the promises returned by db.js
+- Home: manages the displaying of all the cards and the promises returned by db.js
 (that manages communication with Firestorm).
 
 ## How to use?
